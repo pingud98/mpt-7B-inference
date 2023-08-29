@@ -12,11 +12,11 @@ Video of initial demo:
 
 ## Requirements
 
-I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 16GB of ram. Recommend to use `python 3.10`.
+I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 8GB of ram. Recommend to use `python 3.10`.
 
 ## Tested working on
 
-Nothing yet!
+AMD Ryzen 3750h with 16GB RAM, running Ubuntu 22.04 LTS. Runs fine, if not the fastest. 
 
 ## Setup
 
