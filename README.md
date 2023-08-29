@@ -1,6 +1,6 @@
-# MPT 30B inference code using CPU
+# MPT 7B inference code using CPU
 
-Run inference on the latest MPT-30B model using your CPU. This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
+Run inference on the latest MPT-7B model using your CPU. This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
 
 Turn style with history on latest commit:
 
@@ -12,14 +12,11 @@ Video of initial demo:
 
 ## Requirements
 
-I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 32GB of ram. Recommend to use `python 3.10`.
+I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 16GB of ram. Recommend to use `python 3.10`.
 
 ## Tested working on
 
-Will post some numbers for these two later.
-
-- AMD Epyc 7003 series CPU
-- AMD Ryzen 5950x CPU
+Nothing yet!
 
 ## Setup
 
@@ -35,7 +32,7 @@ Next install dependencies.
 pip install -r requirements.txt
 ```
 
-Next download the quantized model weights (about 19GB).
+Next download the quantized model weights (about 4GB).
 
 ```sh
 python download_model.py
