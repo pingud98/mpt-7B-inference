@@ -18,7 +18,7 @@ class GenerationConfig:
 
 
 def format_prompt(system_prompt: str, user_prompt: str):
-    """format prompt based on: https://huggingface.co/spaces/mosaicml/mpt-30b-chat/blob/main/app.py"""
+    """format prompt based on: https://huggingface.co/mosaicml/mpt-7b-chat/tree/main"""
 
     system_prompt = f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
     user_prompt = f"<|im_start|>user\n{user_prompt}<|im_end|>\n"
@@ -45,9 +45,9 @@ def generate(
 
 
 if __name__ == "__main__":
-    config = AutoConfig.from_pretrained("mosaicml/mpt-30b-chat", context_length=8192)
+    config = AutoConfig.from_pretrained("mosaicml/mpt-7b-chat", context_length=8192)
     llm = AutoModelForCausalLM.from_pretrained(
-        os.path.abspath("models/mpt-30b-chat.ggmlv0.q4_1.bin"),
+        os.path.abspath("models/mpt-7b-chat.ggmlv0.q4_1.bin"),
         model_type="mpt",
         config=config,
     )
