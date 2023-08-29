@@ -13,9 +13,9 @@ def download_mpt_quant(destination_folder: str, repo_id: str, model_filename: st
 
 
 if __name__ == "__main__":
-    """full url: https://huggingface.co/TheBloke/mpt-30B-chat-GGML/blob/main/mpt-30b-chat.ggmlv0.q4_1.bin"""
+    """full url: https://huggingface.co/TheBloke/mpt-7b-chat-GGML/blob/main/mpt-7b-chat.ggmlv0.q4_1.bin"""
 
-    repo_id = "TheBloke/mpt-30B-chat-GGML"
-    model_filename = "mpt-30b-chat.ggmlv0.q4_1.bin"
+    repo_id = "TheBloke/mpt-7b-chat-GGML"
+    model_filename = "mpt-7b-chat.ggmlv0.q4_1.bin"
     destination_folder = "models"
     download_mpt_quant(destination_folder, repo_id, model_filename)
