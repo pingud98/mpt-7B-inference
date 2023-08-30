@@ -1,6 +1,6 @@
 # MPT 7B inference code using CPU
 
-Run inference on the latest MPT-7B model using your CPU. This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
+Run inference on the latest MPT-7B model using your CPU and just 8gb of ram. If you have more ram (32gb), then you should check out the [original repo](https://github.com/abacaj/mpt-30B-inference) which has a much larger LLM.  This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
 
 Turn style with history on latest commit:
 
